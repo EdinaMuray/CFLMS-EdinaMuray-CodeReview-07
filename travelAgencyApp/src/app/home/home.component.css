@@ -35,16 +35,6 @@ user agent stylesheet div {
   margin-bottom: 4rem;
 }
 
-*,
-::after,
-::before {
-  box-sizing: border-box;
-}
-
-user agent stylesheet div {
-  display: block;
-}
-
 img {
   width: 350px;
   height: 250px;

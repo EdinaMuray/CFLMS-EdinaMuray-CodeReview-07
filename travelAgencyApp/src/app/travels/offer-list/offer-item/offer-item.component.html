@@ -1,0 +1,23 @@
+<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+  <div class="col p-4 d-flex flex-column position-static">
+    <strong class="d-inline-block mb-2 text-primary">{{ offerItem.name }}</strong>
+    <h3 class="mb-0">Start: {{ offerItem.start }}</h3>
+    <div class="mb-1">Duration: {{ offerItem.duration }}</div>
+    <p class="card-text mb-auto">{{ offerItem.description }}</p>
+    <span>Price: {{ offerItem.price | currency: "€" }}</span>
+    <a href="#" class="stretched-link">Continue reading</a>
+  </div>
+  <div class="col-auto d-none d-lg-block">
+    <img class="bd-placeholder-img card-img-top" [src]="offerItem.image" preserveAspectRatio="xMidYMid slice"
+      focusable="false" role="img" aria-label="Placeholder: Thumbnail"/>
+  </div>
+  <hr>
+  <div class="d-flex justify-content-between align-items-center">
+    <div class="btn-group">
+      <button type="button" class="btn btn-sm btn-primary product-btn" (click)="handleAddToCart()">
+        Add to Cart</button>
+      <button type="button" class="btn btn-sm btn-outline-secondary product-btn">View Details</button>
+    </div>
+  </div>
+  </div>
+
